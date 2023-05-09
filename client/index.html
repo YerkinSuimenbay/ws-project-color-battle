@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Multiplayet game</title>
+  </head>
+  <body>
+    <div class="page">
+      <p class="title">Welcome to ColorBattle</p>
+
+      <button id="create-btn" class="btn">Create new game</button>
+
+      <div class="share-game-container">
+        <p>Share the gameId below to let others join the game:</p>
+        <button id="share-link" class="btn">copy to clipboard</button>
+      </div>
+
+      <p class="or-line">OR</p>
+
+      <div class="join-game-container">
+        <input type="text" id="gameIdInput" placeholder="Enter gameId..." />
+        <button id="join-btn" class="btn">Join a game</button>
+      </div>
+
+      <div class="players"></div>
+      <div class="board">
+        <p class="board__title">The Board</p>
+        <div class="board__cells">
+          <!-- <button class="board__cell"></button> -->
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

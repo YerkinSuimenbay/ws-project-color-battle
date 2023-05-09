@@ -1,0 +1,116 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(230, 230, 230);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.page {
+  width: 90vw;
+  max-width: 500px;
+  background-color: beige;
+  min-height: 90vh;
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.title {
+  text-align: center;
+  margin: 1rem auto;
+  font-size: 3rem;
+}
+
+.or-line {
+  text-align: center;
+  margin: 10px auto;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  border-radius: 5px;
+}
+
+.btn {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  border: 1px solid;
+}
+#create-btn {
+  background-color: chartreuse;
+}
+.share-game-container {
+  display: none;
+}
+
+#share-link {
+  margin-top: 10px;
+  color: blue;
+}
+
+.join-game-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid;
+  width: fit-content;
+  padding: 10px;
+  background-color: rgb(0, 238, 255);
+  margin: 0 auto;
+}
+
+.join-game-container > * {
+  margin: 0;
+}
+
+#join-btn {
+  background-color: rgb(138, 247, 255);
+}
+
+input#gameIdInput {
+  padding: 10px;
+  display: block;
+}
+
+.players {
+  margin: 10px auto;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.board {
+  display: none;
+}
+
+.board__title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.board__cells {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 5px;
+  justify-items: center;
+  align-items: center;
+}
+
+.board__cell {
+  width: 70px;
+  height: 70px;
+}
